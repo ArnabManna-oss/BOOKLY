@@ -4,7 +4,31 @@
     font-family: 'Roboto', sans-serif;
     font-weight: bolder;
 }
+.hero{
+    height: 667px;
+    position: relative;
+}
 
+.im{
+    /* margin-left:30px; */
+    border-radius: 62%;
+    height: 57px;
+    left: 15px;
+    position: absolute;
+    top: 18px;
+}
+
+.hero::before{
+   
+    content: '';
+    position: absolute;
+    margin-top: 20px;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top,#1c0522,transparent);
+    z-index: 2;
+}
 .navbar{
     width: 85%;
     margin: auto;
@@ -27,7 +51,9 @@
     color: #ffffff; 
     text-transform: uppercase;
 }
-
+.golla{
+    display: flex;
+}
 .navbar ul li::after{
    content: '';
    height: 3px;
@@ -46,8 +72,31 @@
 .navbar{
     margin: 0;
     width: 100%;
-    background-color: rgba(0, 0,0, 0.5);
+    /* background-color: rgba(0, 0,0, 0.5); */
 }
+
+
+.navbar::after{
+    content: '';
+    position: absolute;
+    /* margin-top: 19px; */
+    /* bottom: 0; */
+    top: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to bottom,#1c0522,transparent);
+    z-index: -1;
+    /* content: '';
+    position: absolute;
+    margin-top: 20px;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to bottom,#1c0522,transparent);
+    z-index: 2; */
+}
+
+
 .content {
     width: 100%;
     position: absolute;
@@ -58,13 +107,68 @@
 }
 
 .content h1{
-    font-size: 70px; margin-top: 80px;
+    font-size: 70px; 
+    margin-top: 10%;
+    
+    height: 16px;
+    /* position: fixed; */
+    transition: 0.5s;
 }
 .content p{
-    margin: 20px auto;
+    margin-top: 72px;
+    
     font-weight: 100;
-    line-height: 25px;
+    line-height: 50px;
 }
+.about{
+    transform: translateY(-17px);
+}
+.about .content1{
+    width: 100%;
+    position: absolute;
+    /* position: relative; */
+    top: 140%;
+    transform: translateY(-146%);
+    text-align: center;
+    color: #ffffff;
+
+    height: 500px; /* Set the height of the div to allow scrolling */
+    overflow: auto; /* Enable scrolling */
+
+      
+}
+
+.content1 h1, p {
+    /* opacity: 0; /* Hide the elements initially */
+    /* transition: opacity 2s ease;  */
+  opacity: 0;
+  position: relative;
+
+  bottom: -40px; /* Initially position the elements below their normal position */
+  transition: opacity 2s ease, bottom 2s ease; /* Add transition for both opacity and bottom */
+
+  } 
+  
+.content1 h1{
+    font-size: 70px; 
+    margin-top: 19vh;
+    letter-spacing: 0.3em;
+    height: 16px;
+    /* position: fixed; */
+    transition: 0.5s;
+}
+
+.content1 p{
+    margin-top: 72px;
+    font-weight: 20;
+    padding-left: 30vh;
+    padding-right: 30vh;
+    line-height: 25px;
+    bottom: -45px;
+    transition: 1s;
+}
+
+
 
 button{
     width: 200px;
@@ -107,8 +211,214 @@ button:hover{
 .back-video{
     position:absolute;
     right: 0;
+    top:0;
+    object-fit: cover;
     bottom: 0;
     z-index: -1;
     width: 100%;
+    /* height: 200vh; */
     /* height: 100%; */
 }
+
+
+.logo{
+    margin-left: 10%;
+    font-weight: bolder;
+    color: azure;
+}
+
+
+
+
+
+
+
+.about {
+    /* top: auto; */
+    height: 500px;
+    background-color: #0a0b14;
+    margin-top: 0;
+    position: relative;
+    overflow: hidden;
+   
+}
+#changable1{
+    font-size: 70px; 
+    /* margin-top: 10%; */
+
+    height: 16px;
+    /* position: fixed; */
+    transition: 0.5s;
+}
+.about::before{
+   
+    content: '';
+    position: absolute;
+    margin-top: 0px;
+    width: 100%;
+    height: 120px;
+    background: linear-gradient(to bottom,#1c0522,transparent);
+    z-index: 2;
+}
+
+.back-video0{
+    /* height: 500px; */
+    z-index: 0;
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.profile1{
+    background-color: rgba(0a, 0b, 14, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* margin: 0; */
+    z-index: 0;
+    /* position: relative;
+    overflow: hidden; */
+    margin-top: -20px;
+    position: relative;
+    overflow: hidden;
+    /* position: relative; */
+
+}
+/* body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+} */
+.bar{
+    display: flex;
+    top: 50%;
+    left: 20%;
+    padding: 20px;
+    height: 137px;
+    width: 1200px;
+    border-radius: 20px;
+    margin-bottom: 67vh;
+    margin-top: 50vh;
+    transition: 0.5s;
+    background: rgba(257, 255, 255, 0.1);
+    backdrop-filter: blur(8px);
+}
+.bar:hover{
+    width: 1230px;
+    transition: 0.5s;
+}
+.profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.card {
+    position: relative;
+    text-align: center;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.2);
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    transition: 1s;
+    transition: transform 0.3s ease-in-out;
+    backdrop-filter: blur(8px);
+}
+
+.card:hover {
+    transform: scale(1.1);
+    width:200px;
+    height:250px;
+    border-radius: 10%;
+    transition: 0.5s;
+}
+
+.dp {
+    height: 138px;
+    width: 138px;
+    object-fit: cover;
+    border-radius: 55%;
+    padding: 6px;
+    /* height: 138px;
+    width:138px;
+    object-fit: cover;
+    border-radius: 27%;
+    padding: 16px; */
+}
+
+.card p {
+    margin-top: -6%;
+    font-size: 16px;
+    opacity: 1;
+}
+
+.nam{
+    color: #fff;
+    justify-content: center;
+    position: absolute;
+    margin-top: 43vh;
+    font-family: 'Noto Sans Cypro Minoan', sans-serif;
+    font-size: -webkit-xxx-large;
+}
+
+.back-video1{
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+
+    /* position: absolute; */
+    top: 0;
+    left: 0;
+    object-fit: cover;
+}
+
+.profile1::before{
+   
+    content: '';
+    position: absolute;
+    /* margin-top: -501px; */
+    top:0;
+    width: 100%;
+    height: 200px;
+    background: linear-gradient(to bottom,#0a0b14,transparent);
+    z-index: 1;
+}
+
+
+
+
+.cro{
+    height: 0px;
+    position:absolute;
+    z-index: -100;
+}
+.ham{
+    height: 0px;
+    position:absolute;
+    z-index: -100;
+}
+.navla{
+    position:absolute;
+    z-index: -100;
+}
+
+
+

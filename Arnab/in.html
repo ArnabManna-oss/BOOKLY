@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slide In/Out with Swipes</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+        }
+
+        .sliding-div {
+            width: 200px;
+            height: 100vh;
+            background-color: #ccc;
+            position: fixed;
+            top: 0;
+            right: -200px; /* Initially positioned outside the viewport */
+            transition: right 0.3s ease; /* CSS transition to animate sliding */
+        }
+    </style>
+</head>
+<body>
+    <div class="sliding-div">
+        <!-- Add content for the sliding div here -->
+    </div>
+
+    <script>
+        // Add this JavaScript code in a script.js file or use inline script in the HTML
+
+const slidingDiv = document.querySelector('.sliding-div');
+let startX = 0;
+let endX = 0;
+let threshold = 100; // Adjust this value to control the swipe sensitivity
+
+// Add touchstart event listener to track the initial touch position
+slidingDiv.addEventListener('touchstart', (e) => {
+    startX = e.touches[0].clientX;
+});
+
+// Add touchmove event listener to track the touch movement
+slidingDiv.addEventListener('touchmove', (e) => {
+    endX = e.touches[0].clientX;
+});
+
+// Add touchend event listener to determine swipe direction and trigger sliding effect
+slidingDiv.addEventListener('touchend', () => {
+    const deltaX = endX - startX;
+
+    if (deltaX > threshold) {
+        // Swipe right, slide the div in
+        slidingDiv.style.right = '0';
+    } else if (deltaX < -threshold) {
+        // Swipe left, slide the div out
+        slidingDiv.style.right = '-200px'; // Adjust this value to match the initial right position
+    }
+});
+
+    </script>
+</body>
+</html>

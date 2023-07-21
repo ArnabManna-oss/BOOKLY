@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="myHeading">Initial Heading</h1>
+<script>
+    var texts = ["Text 1", "Text 2", "Text 3", "Text 4", "Text 5", "Text 6", "Text 7"];
+var currentIndex = 0;
+
+function changeText() {
+  var heading = document.getElementById("myHeading");
+  heading.textContent = texts[currentIndex];
+  currentIndex = (currentIndex + 1) % texts.length;
+}
+
+setInterval(changeText, 750);
+
+</script>
+</body>
+</html>
