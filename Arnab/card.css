@@ -1,3 +1,21 @@
+@media (max-width:876px) {
+    .back-video {
+        position: absolute;
+        right: 0;
+        top: 0;
+        object-fit: cover;
+        bottom: 0;
+        z-index: -1;
+        width: 876px;
+        height: 73vh;
+        /* height: 200vh; */
+        /* height: 100%; */
+    }
+
+}
+
+
+
 @media (max-width:412px) {
     body {
         margin: 0;
