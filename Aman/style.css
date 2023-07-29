@@ -1,0 +1,197 @@
+/* Reset default styles */
+body,
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* Header styles */
+header {
+  background-color: #009688;
+  ;
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+}
+
+nav ul li {
+  margin-right: 20px;
+}
+
+nav ul li:last-child {
+  margin-right: 70px;
+  /* Add space between the last link and the company icon */
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+nav ul li a.active {
+  text-decoration: underline;
+}
+
+/* Main content styles */
+main {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  /* Add spacing between content and sidebar */
+}
+
+.content {
+  margin: 20px;
+}
+
+.stats {
+  display: inline-flex;
+  width: 60vw;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.stat-card {
+  background-color: #f5f5f5;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  flex-basis: calc(33.33% - 20px);
+  transition: transform 0.3s ease-in-out;
+  /* Add transition effect */
+  cursor: pointer;
+}
+
+.stat-card:hover {
+  transform: scale(1.05);
+  /* Scale up the card on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  /* Add box shadow on hover */
+}
+
+.stat-card h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #fff;
+  /* Set the color to white */
+}
+
+.stat-card span {
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+  /* Set the color to white */
+}
+
+.stat-card {
+  border: 2px solid #333;
+  /* Add border to stat cards */
+}
+
+p {
+  line-height: 1.5;
+  color: #666;
+}
+
+/* Footer styles */
+footer {
+  background-color: #009688;
+  ;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  position: relative;
+  bottom: -18vh;
+}
+
+/* Book image styles */
+.book-image {
+  width: 180px;
+  display: inline-block;
+  padding-right: 13vw;
+}
+
+/* Sidebar styles */
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 20px;
+}
+
+.buttons {
+  display: inline-flex;
+  flex-direction: column;
+  gap: 10px;
+  position: relative;
+  bottom: 197px;
+  padding-right: 1vw;
+}
+
+.add-button,
+.delete-button,
+.sell-button,
+.request-button,
+.stat-card {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #009688;
+  ;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  /* Add box shadow to all buttons */
+}
+
+.add-button:hover,
+.delete-button:hover,
+.sell-button:hover,
+.request-button:hover,
+.stat-card:hover {
+  background-color: #009688;
+  ;
+}
+
+.add-button,
+.delete-button,
+.sell-button,
+.request-button {
+  transition: background-color 0.3s ease-in-out;
+  /* Add transition effect to button background color */
+}
+
+#btn {
+  border-radius: 20px;
+}
+
+.company-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 50px;
+  border-radius: 50px;
+}
