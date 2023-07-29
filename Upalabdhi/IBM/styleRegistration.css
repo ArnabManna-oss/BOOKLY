@@ -1,0 +1,273 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap");
+*{
+    margin:0;
+    padding: 0;
+    
+    font-family:'Poppins',sans-serif;
+}
+body{
+    
+    background-image:url(https://wallpapercave.com/wp/wp3354896.jpg);
+    
+     /* background-image:  url(background1.html); */
+    /* background-color: rgb(28, 112, 137); */
+    background-repeat: no-repeat;
+    background-size:cover ;
+    height: 100vh;
+    overflow: hidden;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+}
+.container{
+    /* width: 1080px; */
+    /* margin: 160px auto; */
+    /* position:relative; */
+    background-color:whitesmoke;
+    padding: 45px 58px 45px 40px;
+    border-radius: 25px;
+    border: 8px solid #223243;
+    margin-right: 40%;
+    box-shadow:-5px -5px 15px rgba(255, 255, 255, 0.1),
+    5px 5px 15px rgba(0,0,0,0.35),
+    inset -5px -5px 15px rgba(255,255,255 ,0.1),
+    inset 5px 5px 15px rgba(0,0,0,0.35);
+
+}
+/* .container .title{
+    font-size: 28px;
+    font-weight: bold;
+    color: whitesmoke;
+    padding: 25px 0 30px 25px;
+    background: #014d4e;
+    border-bottom: 1px solid #03bbcc;
+    border-radius: 5px 5px 1 0;
+} */
+.container .form{
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction: column;
+    gap: 12px;
+
+}
+
+.container .form h1{
+    color:#014d4e;
+    font-weight: 580;
+    letter-spacing: 0.11em;
+}
+
+.container .form .inputBox{
+    position:relative;
+    width: 400px;
+    height: 34px;
+}
+
+.container .form .inputBox input{
+    padding: 5px 6px 6px 5px;
+    border: none;
+    width: 100%;
+    background: whitesmoke;
+    border: 1px solid  rgba(0,0,0,0.1);
+    color: rgb(58, 7, 45);
+    font-weight: 300;
+    border-radius: 25px;
+    font-size: 1em;
+    box-shadow: -5px -5px 15px rgba(255, 255, 255, 0.1),
+    5px 5px 15px rgba(0,0,0,0.35);
+    transition: 0.5s;
+    outline: none;
+    /* text-align:center; */
+    padding-left: 45px;
+
+}
+
+.container .form .inputBox span{
+    position: absolute;
+    left:47px;
+    top: 5px;
+    /* right: 40px; */
+    padding: -3px 8px 3px 14px;
+    pointer-events: none;
+    font-size: 1em;
+    font-weight: 500;
+    transition: 0.5s;
+    letter-spacing: 0.05em;
+    color:#014d4e;
+}
+
+
+
+.container .form .inputBox i{
+    position: absolute;
+    padding-right: 8px;
+    top: 5.5px;
+    left: 16px;
+    width: 25px;
+    padding: 2px 0;
+    color: #088092;
+    border-right: 1.5px solid  #088092;
+
+}
+
+.container .form .inputBox input:valid ~ span,
+.container .form .inputBox input:focus ~ span{
+    color:  #560c71 ;
+    border: 2px solid  #560c71;
+    background: whitesmoke;
+    transform: translateX(-20px) translateY(-15px);
+    font-size: 0.6em;
+    padding: 0 10px ;
+    border-radius: 10px;
+    letter-spacing: 0.1em;
+}
+
+.container .form .inputBox input:valid ,
+.container .form .inputBox input:focus{
+    border: 2px solid  #560c71bb ;
+}
+
+.container .form .inputBox input[type="submit"]{
+    background:whitesmoke ;
+    color: #020c0c;
+    padding: 10px 0;
+    align-items: center;
+    font-weight: 500;
+    cursor: pointer;
+    box-shadow:-5px -5px 15px rgba(255, 255, 255, 0.1),
+    5px 5px 15px rgba(0,0,0,0.35),
+    inset -5px -5px 15px rgba(255,255,255 ,0.1),
+    inset 5px 5px 15px rgba(0,0,0,0.35);
+
+}
+
+.container .form .inputBox input[type="submit"]:hover{
+    background-color:#009688 ;
+}
+.container .form p{
+    color: rgb(54, 6, 6);
+    font-size: 0.90em;
+    font-weight: 500;
+}
+
+.container .form p a{
+    font-weight: 500;
+    color: #014d4e;
+}
+.container .form .dropdown{
+    color:#014d4e;
+    margin-right: 20%;
+}
+#myDropdown {
+    background-color:#009688; /* Change this to the desired background color */
+    color: #014d4e; /* Change this to the desired text color */
+    border: 1px solid  #560c71bb ; /* Change this to the desired border color */
+    padding: 5px;
+    border-radius: 9px;
+    width: 200px; /* Set the desired width for the dropdown */
+}
+#myDropdown option {
+    background-color:whitesmoke; /* Change this to the desired background color */
+        color: #014d4e;}
+/* .dialogue form{
+    position: absolute;
+    background:whitesmoke ;
+    width: 100%;
+    padding: 50px 10px 0 30px;
+    box-sizing:border-box ;
+    border: 1px solid #0b8398;
+    border-radius: 0 0 5px 5px;
+} */
+/* form button{
+    height: 20px;
+    width: 20%;
+    padding: 0 2px;
+    border-radius: 3px;
+    border: 1px solid silver;
+    font-size: 15px;
+    outline: none;
+} */
+/* form button[class="mybtn"]{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 130px;
+    height: 45px;
+    color: whitesmoke;
+    cursor: pointer;
+    line-height: 45px;
+    border-radius: 45px;
+    border-radius: 5px;
+    background: #02666d;
+} */
+.pos{
+    margin-left: -400px;
+    padding: 33px;
+}
+
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+}
+section .book{
+    position: relative;
+    width: 333px;
+    height: 500px;
+    box-shadow: 20px 20px 20px rgba(62, 1, 45, 0.208);
+    transform-style: preserve-3d;
+    transition: 0.5s;
+
+}
+
+section .book:hover{
+
+    transform: rotateY(35deg);
+    box-shadow: 0px 20px 20px rgba(62, 1, 46, 0.436);
+}
+section .book:active{
+
+    transform: rotateY(180deg);
+    /* box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.2); */
+}
+section .book:before{
+    content: '';
+    position: absolute;
+    /* top:0;
+    left:0; */
+    width:60px;
+    height: 100%;
+    transform-origin: left;
+    background: url(booksideView.jpeg);
+    background-position: center;
+    transform: rotateY(90deg);
+    background-position-y: 105px;
+    background-size: cover; /* Adjust the size to cover the container (can use 'contain' or custom values as well) */
+    background-repeat: no-repeat; /* Prevent repeating of the image */
+    background-position: center; 
+
+}
+section .book:after{
+    content: '';
+    position:absolute;
+    width:100%;
+    height: 100%;
+    transform-origin: center;
+    background:url(BookBackView.jpg);
+    background-position: center;
+    background-size: cover;
+    transform:rotateY(180deg) translateZ(60px);
+    /* translate3d(-1px, 2px, 49px); */
+}
+section .book img{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
